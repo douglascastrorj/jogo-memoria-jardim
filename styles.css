@@ -7,12 +7,15 @@
 body {
   height: 100vh;
   display: flex;
-  background: #060AB2;
+  background-image: url(img/IMG_2964.JPG);
+  background-size: cover;
+  background-position: 0 -140px; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 .memory-game {
   width: 1100px;
-  height: 640px;
+  height: 460px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
