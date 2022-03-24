@@ -9,7 +9,7 @@ body {
   display: flex;
   background-image: url(img/IMG_2964.JPG);
   background-size: cover;
-  background-position: 0 -120px; /* Center the image */
+  background-position: 0px 0px; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
 
   flex-direction: column;
@@ -18,25 +18,25 @@ body {
 }
 
 .game-title {
-  padding: 20px 60px;
+  padding: 10px 40px;
   border-radius: 20px;
   background-color: rgba(179, 66, 245,1);
 
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .game-title span {
   color: white;
-  font-size: 36px;
+  font-size: 24px;
   font-family: sans-serif;
 }
 
 .memory-game {
-  width: 1100px;
-  height: 460px;
+  width: 900px;
+  height: 360px;
   /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
@@ -44,8 +44,8 @@ body {
 }
 
 .memory-card {
-  width: 140px;
-  height: 200px;
+  width: 120px;
+  height: 160px;
   margin: 15px;
   position: relative;
   transform: scale(1);
@@ -76,4 +76,54 @@ body {
 
 .front-face {
   transform: rotateY(180deg);
+}
+
+
+/* The Modal (background) */
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-self: center;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

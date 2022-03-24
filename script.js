@@ -1,8 +1,44 @@
 const cards = document.querySelectorAll('.memory-card');
+const modal = document.getElementById("myModal");
+const closeModalButton = document.getElementsByClassName("close")[0];
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+
+const MAX_POINTS = 6;
+let points = 0;
+
+
+function showModal() {
+  modal.style.display = "block";
+}
+
+function hideModal() {
+  modal.style.display = "none";
+}
+
+closeModalButton.onclick = function() {
+  resetGame() ;
+}
+
+function isGameOver() {
+  return points >= MAX_POINTS;
+}
+
+function getPoint() {
+  points++;
+
+  if(isGameOver()) {
+    showModal();
+  }
+}
+
+function resetGame() {
+  points = 0;
+  hideModal();
+  location.reload();
+}
 
 function flipCard() {
   if (lockBoard) return;
@@ -34,6 +70,7 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
+  getPoint();
   resetBoard();
 }
 
