@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   display: flex;
-  background-image: url(img/IMG_2964.JPG);
+  background-image: url(img/fundo_jogo.jpg);
   background-size: cover;
   background-position: 0px 0px; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -18,13 +18,13 @@ body {
 }
 
 .game-title {
-  padding: 10px 40px;
-  border-radius: 20px;
-  background-color: rgba(179, 66, 245,1);
+  /* padding: 10px 40px; */
+  /* border-radius: 20px; */
+  /* background-color: rgba(179, 66, 245,1); */
 
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   margin: 20px 0;
 }
 
