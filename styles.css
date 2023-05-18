@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +18,27 @@ body {
   align-items: center;
 }
 
+.logo-jardim {
+  position: absolute;
+  left: 0;
+  /* bottom: 0; */
+  /* background-color: rgba(0,0,0, 0.7); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+  gap: 10px;
+}
+
+.logo-jardim .logo-2{
+  width: 80px;
+}
+
+.logo-jardim .logo-1{
+  width: 100px;
+}
+
 .game-title {
   /* padding: 10px 40px; */
   /* border-radius: 20px; */
@@ -25,13 +47,29 @@ body {
   /* justify-content: center;
   align-items: center;
   text-align: center; */
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .game-title span {
   color: white;
   font-size: 24px;
   font-family: sans-serif;
+}
+
+.sea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  color:#4CAF50;
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+.sea-descricao {
+  font-size: 14px;
 }
 
 .memory-game {
